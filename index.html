@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav class="p-5 bg-green-500 shadow-lg md:flex items-center md:justify-between">
+       <div class=" flex items-center justify-between">
+            <div class="text-black font-sans text-2xl font-semibold cursor-pointer ml-10">CreativeTimx</div>
+            <ion-icon name="menu-outline" class="md:hidden text-3xl cursor-pointer" onclick="menu(this)"></ion-icon>
+       </div>
+
+
+       <ul class="Navbar mx-10 lg:mx-0 md:flex items-center absolute md:static right-0  bg-green-500 w-full md:w-auto  mt-4 md:mt-0 pl-11 md:pl-0 opacity-0 md:opacity-100 transition-all ease-in top-[-400] duration-500 mr-0 md:mr-20"> <!--z-[-1] md:z-auto -->
+            <li class="lg:mx-5 mx-3 my-6 md:my-0 cursor-pointer text-black font-semibold text-xl">Home</li>
+            <span class="text-gray-500 text-sm font-extralight hidden md:block">|</span>
+            <li class="lg:mx-5 mx-3 my-6 md:my-0 cursor-pointer text-black font-semibold text-xl">About</li>
+            <span class="text-gray-500 text-sm font-extralight hidden md:block">|</span>
+            <li class="lg:mx-5 mx-3 my-6 md:my-0 cursor-pointer text-black font-semibold text-xl">Project</li>
+            <span class="text-gray-500 text-sm font-extralight hidden md:block">|</span>
+            <li class="lg:mx-5 mx-3 my-6 md:my-0 cursor-pointer text-black font-semibold text-xl">Achievements</li>
+            <span class="text-gray-500 text-sm font-extralight hidden md:block">|</span>    
+            <li class="lg:mx-5 mx-3 my-6 md:my-0 cursor-pointer text-black font-semibold text-xl">Contact</li>
+       </ul>
+    </nav>
+
+    <section class="bg-black w-full py-5">
+        <h1 class="my-10 text-white text-center text-2xl font-serif font-bold">Hi Creatives!</h1>
+        <hr class="border-t-2 border-gray-500">
+        <h1 class="my-10 text-green-500 text-4xl font-serif  font-semibold text-center after:content-[''] after:border-t-2 after:border-green-500 after:absolute after:top-72 after:w-20 after:left-1/2 after:-translate-x-1/2 ">About Me</h1>
+
+        <div class="container mx-auto my-5 lg:flex lg:justify-evenly">
+            <div class="flex lg:flex-col justify-center mb-5 lg-mb-0">
+                <img src="logo.jpg" class="lg:w-72 lg:h-56 w-96 h-96">
+            </div>
+            <div class="">
+                <p class="text-white lg:max-w-xl leading-tight font-semibold p-4"> 
+                    Thanks for your interest, here is a quick story of me and this website.
+                    <br><br>
+                    Sandeep Jain An IIT Roorkee alumnus and founder of CreativeTimx. He 
+                    loves to solve programming problems in most efficient ways. Apart from 
+                    CreativeTimx, he has worked with DE Shaw and Co. as a software 
+                    developer and JIIT Noida as an assistant professor.
+                    <br><br>
+                    I do my work mainly in C-Language, C++ and JAVA. C++ and Data Structure
+                    & Algorithm are my stronger section.Besides these I know Web Development,
+                    LINUX and database as well.
+                    <br><br>
+                    This website is basically one of my Web Development project which is 
+                    built using HTML only.Here one can also find ideas for 
+                    projects in different languages.
+                    <br><br>
+                    Thanks again for reading this, because of people like you, it 
+                    exists and prospers!
+                    <br><br>
+                    Cheers,
+                    <br>
+                    <span class="font-bold">CreativeTimx.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-300 w-full py-5">
+        <h1 class="my-5 text-4xl font-sans font-normal text-center after:content-[''] after:border-t-2 after:border-black after:relative after:inline-block after:w-16 after:top-4 after:right-24" >Projects</h1>
+        
+        <div class="container mx-auto w-2/3 md:w-10/12 lg:w-3/4 mt-20 md:flex md:justify-between p-3">
+            
+            <ul class="list-disc mb-5">
+                <li class="mb-3">BMI Calculator</li>
+                <li class="mb-3">Calculator</li>
+                <li class="mb-3">Calendar</li>
+                <li class="mb-3">ChatBot</li>
+                <li class="mb-3">Contact Saver</li>
+                <li class="mb-3">Daily Quiz</li>
+                <li class="mb-3">Daily Quiz</li>
+                <li class="mb-3">Guess the Number-Game</li>
+                <li class="mb-3">Random Password Generator</li>
+                <li class="mb-3">Stone Paper Scissor</li>
+                <li class="mb-3">Tic Tac Toe</li>
+                <li class="mb-3">Tic Tac Toe(GUI)</li>
+                <li class="mb-3">ToDo App</li>
+                <li class="mb-3">Travel Management System</li>
+            </ul>
+            
+            <div class="flex flex-col justify-center">
+                <img src="logo.jpg" class="w-96 h-60">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="bg-black w-fill p-5">
+        <h1 class="text-green-500 font-sans text-4xl font-medium text-center my-10 after:relative after:content-[''] after:border-t-2 after:border-green-500 after:inline-block after:w-20 after:top-3 after:right-36">Achievements</h1>
+
+        <div class="container mx-auto w-full md:w-5/6 lg:w-3/4">
+            <ul class="list-disc list-outside text-white p-5">
+                <li class="mb-4"><span class="font-bold">Intern at CreativeTimx.</span>
+                    <ul class="list-decimal list-inside">
+                        <li>December,2020 - Present.</li>
+                        <li>Write technical articles 
+                            on programming related topics.</li>
+                    </ul>
+                </li>
+
+                <li class="mb-4"><span class="font-bold">Microsoft Learn Student Ambassador.</span>
+                    <ul class="list-decimal list-inside">
+                        <li>August,2020 - Present.</li>
+                        <li>Conducted events and workshops on
+                            different technologies.</li>
+                    </ul>
+                </li>
+
+                <li class="mb-4"><span class="font-bold">Mentored HackTX.</span>
+                    <ul class="list-decimal list-inside">
+                        <li>October,2020.</li>
+                        <li>Selected from Microsoft as Student
+                            ambassador where I mentored students
+                            in their projects.</li>
+                    </ul>
+                </li>
+
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-gray-300 w-flll p-5">
+        <h1 class="text-center text-4xl font-sans my-5 font-medium after:content-[''] after:relative after:border-t-2 after:border-black after:w-20 after:inline-block after:top-3 after:right-24">Contact</h1>
+
+        <div class="container mx-auto lg:w-3/5 xl:w-2/5 bg-black my-5 py-4 pl-4 pr-8">
+            <label for="name" class="flex mb-10">
+                <h1 class="text-white w-32 mr-3">Name</h1>
+                <input type="text" class="w-full">
+            </label>
+            <label for="felkrkwemfrmwm" class="flex mb-8">
+                <h1 class="text-white w-32 mr-3">Email</h1>
+                <input type="email" class="w-full">
+            </label>
+            <label for="felkrkwemfrmwm" class="flex mb-8">
+                <h1 class="text-white w-24 mr-2 sm:w-28 sm:mr-0 md:w-28 md:mr-1 lg:w-28 xl:w-24  xl:mr-3">Number</h1>
+                <input type="number" class="w-52 ">
+            </label>
+            <label for="felkrkwemfrmwm" class="flex mb-8">
+                <h1 class="text-white w-32 mr-0 sm:w-28 sm:mr-0 md:w-28 md:mr-1 lg:w-28 xl:w-24  xl:mr-3">Message</h1>
+                <textarea name="Message" id="" cols="40" rows="4"></textarea>
+                <button>Submit</button>
+            </label>
+
+            
+        </div>
+    </section>
+
+    <section class="bg-green-500 w-full p-5 ">
+        
+        <div class="container mx-auto md:flex md:justify-between w-full lg:w-3/4">
+            <a href="#" class="font-bold px-1">LinkedIn</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">GitHub</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">HackerRank</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">CreativeTimx</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">Twitter</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">Instagram</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">Email</a>
+            <span class="text-gray-500 font-extralight">|</span>
+            <a href="#" class="font-bold px-1">Website</a>
+        </div>
+    </section>
+    <section class=" bg-black w-full p-5">
+        <div class=" container mx-auto flex md:flex-row flex-col md:justify-between items-center">
+            <h1 class="text-white font-semibold text-md md:text-xl">©Copyright 2023 by CreativeTimx. 
+                All rights reserved.</h1>
+            <span class="text-white text-xl">Top^</span>
+        </div>
+
+    </section>
+</body>
+</html>
+
+
+<!-- after:content-[''] after:absolute after:w-14 after:border-b-2 after:border-green-500 after:left-1/2 after:top-72 after:-translate-x-1/2 -->
